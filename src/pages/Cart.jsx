@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { usePaystackPayment } from 'react-paystack';
+
 
 export default function CartPage() {
     useEffect(() =>{
@@ -31,7 +31,7 @@ export default function CartPage() {
     publicKey: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY,
   };
   
-  const initializePayment = usePaystackPayment(config);
+  //const initializePayment = usePaystackPayment(config);
   
   const onSuccess = (reference) => {
     console.log(reference);
@@ -139,7 +139,7 @@ export default function CartPage() {
               
               {/* Payment Button */}
               <button
-                onClick={handlePayment}
+                
                 className="w-full py-3 px-6 bg-gradient-to-r from-[#00337C] to-[#B76E79] text-white font-medium rounded-full hover:from-[#B76E79] hover:to-[#00337C] transition-all duration-300"
               >
                 Proceed to Payment
