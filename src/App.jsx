@@ -7,6 +7,7 @@ import About from './pages/About'
 import SponsorPage from './pages/Sponsor'
 import CartPage from './pages/Cart'
 import SponsorSupportPage from './pages/SponsorPage'
+import ContactPage from './pages/Contact'
 
 export default function Router() {
   return (
@@ -19,6 +20,7 @@ export default function Router() {
         <Route path="/sponsor" element={<SponsorPage/>}/>
         <Route path="/cart" element={<CartPage/>}/>
         <Route path="/donate" element={<SponsorSupportPage/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
         
         
       </Routes>
